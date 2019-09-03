@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> CC calculos</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body bgcolor="FFCECB" onload="saludarejercicios()">
+
+
+<header>
+    <section id="tituloPrincipal">
+
+        <h1><img src="imagenes/descarga.jpg" width="100 px" alt="logo">
+            <u>CC CALCULADORA: PARA APRENDER ECUACIONES</u></h1>
+
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="temas.html"> TEMAS</a>
+            <a href="ejercicios.html"> EJERCICIOS</a>
+            <a href="somos.html"> QUIENES SOMOS?</a>
+            <a href="contacto.html"> CONTACTANOS</a>
+        </nav>
+    </section>
+</header>
+<div class="wrapper">
+    <form id="ejercicios" name="ejercicios">
+
+        <p> Primer Grado</p>
+        <span> coeficiente de X=</span><input type="text" name="X" id="X" value="0"> + <input type="text" name="Nro"
+                                                                                              id="Nro" value="0">
+        =<input type="text" name="resultado" id="resultado" value="0"><input onclick="resolverprimergrado()"
+                                                                             type="button" value="Ver resultado">
+        <br><input id="total1" type="text" name="primerrdo" disabled>
+        <p> Segundo Grado</p>
+        <span>coeficiente de X^2</span><input type="text" name="Xcuadrado" id="Xcuadrado" value="0"> + coeficiente de X
+        <input type="text" name="Xdos" id="Xdos" value="0"> +<input type="text" name="Nrodos" id="Nrodos"
+                                                                    value="0">=<input type="text" name="resultadodos"
+                                                                                      value="0" disabled><input
+            onclick="resolversegundogrado()" type="button" value="Ver resultado">
+        <br> X1= <input id="totalA" type="text" name="segundordoa" disabled>
+        <br> X2=<input id="totalB" type="text" name="segundordob" disabled>
+        <br><input onclick="func()" type="button" value=" ver resultado">
+
+    </form>
+    <a href="grafica.html" target="_blank">
+        <button>Grafica tus valores de X e Y</button>
+    </a>
+</div>
+
+<div id="mostrarCalculos">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    <title> CC calculos</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body bgcolor="FFCECB" onload="saludargrafica()">
+
+
+<header>
+    <section id="tituloPrincipal">
+
+        <h1><img src="imagenes\descarga.jpg" width="100 px">
+            <u>CC CALCULADORA: PARA APRENDER ECUACIONES</u></h1>
+
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="temas.html"> TEMAS</a>
+            <a href="ejercicios.html"> EJERCICIOS</a>
+            <a href="somos.html"> QUIENES SOMOS?</a>
+            <a href="contacto.html"> CONTACTANOS</a>
+        </nav>
+    </section>
+</header>
+
+<h1>Dibuje el sistema de coordenadas</h1>
+<div class="centrado div-conver">
+    <form name="datos">
+
+        <p>
+            <form id="datos" name="datos">
+        <p><input type="text" name="a" id="a" size="3">x +<input type="text" name="b" id="b" size="3">y= <input
+                type="text" id="c" name="c" size="3"></p>
+        <p><input type="text" name="d" id="d" size="3">x +<input type="text" name="e" id="e" size="3">y=<input
+                type="text" name="f" id="f" size="3"></p>
+        <input type="button" value="Resolver" onClick="res();">
+        <p> x=<input type="text" name="x" size="5"></p>
+        <p> y= <input type="text" name="y" size="5"></p>
+    </form>
+    <br>
+      <button onclick="dibujarCuadriculado();">
+        Ejes Coordenadas
+    </button>
+    <button onclick="DibujeInterseccion(); marcarRecta(); marcarRecta();">
+      Grafico de las ecuaciones
+      <button onclick="dibujarCuadriculado();">
+        Borrar grafico
+    </button>
+  </button>
+    </br>
+</div>
+
+<canvas id="myCanvas" class="ejer" width="1000" height="500">
+    Tu navegador no soporta el tag de HTML5 canvas.
+</canvas>
+</body>
+</html>
